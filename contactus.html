@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/subpages.css">
+    <style media="screen">
+      #header {
+        text-align: center;
+        text-shadow: 4px 6px 8px purple;
+        font-size: 50px;
+        font-style:  normal;
+        font-weight: bold;
+        color: orange;
+        margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- nav -->
+<nav class="navbar">
+  <a href="../index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Cities
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="../Cities/sacramento.html" target="_blank">Sacramento</a>
+      <a href="../Cities/losangeles.html" target="_blank">Los Angeles</a>
+      <a href="../Cities/longbeach.html" target="_blank">Long Beach</a>
+    </div>
+   </div>
+</nav>
+
+<!-- Header -->
+<header id="header">Contact us</header>
+
+<!-- section to display the main content of the contact us page -->
+<section class="maincontent" id="form">
+    <form action="/linkdoesntwork_page.php">
+        <label for="fname">First name:</label><br>
+          <input type="text" id="fname" placeholder="Fname" name="fname" value=""><br><br>
+
+        <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" placeholder="Lname" name="lname" value=""><br><br>
+
+          <label for="email1">Email:</label><br>
+          <input type="email" id="email1" placeholder="Enter your email" required><br><br>
+
+          <label for="email2">Confirm Email:</label><br>
+          <input type="email" id="email2" placeholder="Re-enter your email" required><br><br>
+          <p id="emailMatchMessage"></p>
+
+        Questions:<br>
+          <textarea name="Ask a question" rows="8" cols="80"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+  <figure class="image">
+    <a href="https://www.ca.gov/" target="_blank">
+       <img src="../images/Ca Flag.jpeg"
+         alt="Ca.gov" title="California State" class="building"
+         usemap="#mapski" height="250px">
+    <br>
+        <map name="mapski">
+          <area shape="rect" coords="34,44,270,350">
+       </map>
+  
+       <figcaption class="Bottom-Caption">California Flag</figcaption>
+    </a>
+  </figure>
+  
+  <!-- aside -->
+  <aside>
+    <h1 class="fun">Fun Facts</h1>
+      <ul>
+        <li>California grows over 87% of avocados, 98% of almonds, and 100% all the artichokes in the whole country.</li>
+        <li>California is known for its thrilling theme parks, quality cuisine and wine, sunny beaches and vast National Parks.</li>
+      </ul>
+  </aside>  
+
+<table class="table">
+    <tr>
+      <th>Cities</th>
+      <td>California</td>
+      <td>Sacramento</td>
+      <td>Los Angeles</td>
+      <td>Long Beach</td>
+    </tr>
+    <tr>
+      <th>Website</th>
+      <td>Ca.gov</td>
+      <td>Sacramento.gov</td>
+      <td>La.gov</td>
+      <td>Longbeach.gov</td>
+    </tr>
+    <tr>
+      <th>Phone Number</th>
+      <td>800-807-6755</td>
+      <td>916-808-5011</td>
+      <td>213-974-1234</td>
+      <td>562-570-6625</td>
+    </tr>
+</table>
+
+<footer class="footer">
+  <p>&copy; Copy right, Hayden Davis project D277</p>
+</footer>
+
+</body>
+  <script>
+    const email1Input = document.getElementById('email1');
+    const email2Input = document.getElementById('email2');
+    const emailMatchMessage = document.getElementById('emailMatchMessage');
+
+    function checkEmailMatch() {
+      const email1 = email1Input.value;
+      const email2 = email2Input.value;
+
+      if (email1 === email2) {
+        emailMatchMessage.textContent = 'Emails match';
+        emailMatchMessage.style.color = 'black';
+      } else {
+        emailMatchMessage.textContent = 'Emails do not match.';
+        emailMatchMessage.style.color = 'purple';
+      }
+    }
+    email1Input.addEventListener('input', checkEmailMatch);
+    email2Input.addEventListener('input', checkEmailMatch);
+  </script>
+  
+</html>

@@ -1,0 +1,155 @@
+.navbar {
+  position: static;
+  overflow: hidden;
+  font-family: Arial;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  margin-right: 100px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+  border-radius: 25px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: purple;
+  font: times;
+  font-size: 20px;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  margin: 1px;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: orange;
+  margin: 10px;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: purple;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+style {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, times, sans-serif;
+  background: linear-gradient(to bottom, #ff9900 0%, #9900ff 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 2px 4px 4px lightgrey;
+}
+
+.faqs {
+  text-align: center;
+}
+
+.column {
+  float: left;
+  padding: 0px;
+  height: 100%;
+}
+
+.column.side-L {
+  width: 25%;
+  text-align: Left;
+}
+
+.column.side-R {
+  width: 25%;
+  text-align: left;
+}
+
+.column.middle {
+  width: 50%;
+  text-align: center;
+}
+
+
+.image {
+  border: none;
+  text-align: center;
+}
+
+.image:hover {
+  background-color: purple;
+  color: white;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+figure {
+  margin-top: 100px;
+  margin-left: 140px;
+}
+
+caption {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
+
+footer {
+  color: white;
+  padding: 0px;
+  position: absolute;
+  text-align: left;
+  font-style: italic;
+}
